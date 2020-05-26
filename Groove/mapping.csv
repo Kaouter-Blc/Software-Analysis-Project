@@ -1,0 +1,6 @@
+b1  ; f1 
+b2  ; f2 
+t1  ; (and f1 f2) 
+b3  ; (and f1 f2 (and f1 f2) )
+t2  ; (and f1 f2 (and f1 f2) )
+
