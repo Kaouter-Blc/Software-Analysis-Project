@@ -95,11 +95,11 @@ public class Box {
 
 // this function write directly in the csv file to register "node/edge feature"
 	public void csvWriter() throws FileNotFoundException, IOException {
-		String ret = this.Name + " ; " + this.feature + "\n";
+		String ret = this.Name + " , " + this.feature + "\n";
 		// for each element b(type Box) in the list "contents", we add his name and
 		// feature in "ret" variable(which is a String type)
 		for (Box b : this.contents) {
-			ret += b.Name + " ; " + b.feature + "\n";
+			ret += b.Name + " , " + b.feature + "\n";
 		}
 		System.out.println(ret);
 		List<String> lignes = Arrays.asList(ret);
